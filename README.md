@@ -158,7 +158,7 @@ Use the built-in scheduler to run hourly/daily/weekly with cron-like rules. Queu
 **What happens if an emoji exceeds size limits?**  
 The optimizer pipeline resizes and recompresses automatically; items failing policy are quarantined and reported in `output/audit-report.json`.
 
-##Performance & Reliability Benchmarks
+## Performance & Reliability Benchmarks
 - **Execution Speed:** ~150–300 emoji ops/min across 10–20 parallel devices; linear scaling with additional workers.  
 - **Success Rate:** **95%** end-to-end across upload/rename/delete with retries under moderate rate limits.  
 - **Scalability:** Proven patterns for **300–1000** Android devices/emulators using sharded queues and stateless workers.  
